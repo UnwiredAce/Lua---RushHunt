@@ -284,9 +284,8 @@ function love.draw()
     local yOffset = 20
     for i, card in ipairs(randomCards) do
         local cardImage = cardImages[card.name]
-        love.graphics.draw(cardImage, card.x, card.y, nil, 3, 3)
+        love.graphics.draw(cardImage, card.x, card.y, nil, 2, 2)
         love.graphics.print(card.value, card.xText, card.yText)
-        --love.graphics.print("base value: " .. baseValue, 10, 100)
     end
     love.graphics.print('Life: ' .. life, 10, 10)
     if draggingCard then
